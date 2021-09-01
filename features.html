@@ -34,7 +34,7 @@
         <br>
     </div>
     <div class="section-nav">
-        <!-- navigate trough different command sections 
+        <!-- navigate through different command sections 
              usage:
                 <a href="#google"></a>
                 <div id="google"></div>
@@ -42,13 +42,12 @@
         <ul class="section-nav">
             <li>
                 <a data-scroll="scroll_to" href="#griefing">Griefing</a>
-                <span onclick="scroll_to('griefing')"></span>
             </li>
             <li>
                 <a data-scroll="scroll_to" href="#settings">Settings</a>
             </li>
             <li>
-                <span onclick="scroll_to('info')">Info</span>
+                <a data-scroll="scroll_to" href="#info">Info</a>
             </li>
             <li>
                 <a data-scroll="scroll_to" href="#tools">Tools</a>
@@ -60,7 +59,7 @@
                 <a data-scroll="scroll_to" href="#moderation">Moderation</a>
             </li>
             <li>
-                <a data-scroll="scroll_to" href="#relationships">Realationships</a>
+                <a data-scroll="scroll_to" href="#relationships">Relationships</a>
             </li>
             <li>
                 <a data-scroll="scroll_to" href="#minecraft">Minecraft</a>
@@ -156,12 +155,12 @@
                 aiodstr
                 <p>
                     aiodstr is a command that makes combos of other griefing commands
-                </p><br>
+                </p><br><br>
             </li>
         </ul>
         
         <ul class="settings">
-            <div class="section-name">Settings</div><br>
+            <div class="section-name">Settings Commands</div><br>
             <li class="feature">
                 embed
                 <p>
@@ -199,12 +198,12 @@
                 restart
                 <p>
                     restart is a command that restarts the bot
-                </p><br>
+                </p><br><br>
             </li>
         </ul>
         
         <ul class="info">
-            <div class="section-name">Info</div><br>
+            <div class="section-name">Info Commands</div><br>
             <li class="feature">
                 stats
                 <p>
@@ -221,88 +220,355 @@
                 uptime
                 <p>
                     uptime is a command that shows the time bot has been running
-                </p><br>
+                </p><br><br>
             </li>
         </ul>
         
-        <ul class="placeholder3">
-            <div class="section-name">Section 3</div><br>
+        <ul class="tools">
+            <div class="section-name">Tools Commands</div><br>
             <li class="feature">
-                feature 1
+                fm
                 <p>
-                    description
+                    fm is a command that creates a link to the first message sent in a channel
                 </p><br>
             </li>
             <li class="feature">
-                feature 2
+                poll
                 <p>
-                    description
+                    poll is a command that allows to create an in-chat poll for choices like this or that
                 </p><br>
+            </li>
+            <li class="feature">
+                short
+                <p>
+                    short is a command that uses tinyurl api to reduce link lenght
+                </p><br>
+            </li>
+            <li class="feature">
+                crypto
+                <p>
+                    crypto is a command that checks market prices of crypto currencies
+                </p><br>
+            </li>
+            <li class="feature">
+                tokenlookup
+                <p>
+                    tokenlookup is a command that collects data about any discord token
+                </p>
+                <p>
+                    ⚠️contains sensible infos (phone number, email address, etc)
+                </p><br>
+            </li>
+            <li class="feature">
+                spam
+                <p>
+                    spam is a command that spams any input message
+                </p><br>
+            </li>
+            <li class="feature">
+                avatar
+                <p>
+                    avatar is a command that gets a link to a user picture
+                </p><br>
+            </li>
+            <li class="feature">
+                dlavatar
+                <p>
+                    dlavatar is a command that downloads a user picture
+                </p><br>
+            </li>
+            <li class="feature">
+                dlink
+                <p>
+                    dlink is a command that download anything from an input link
+                </p>
+                <p>
+                    ⚠️use only with trusted links to avoid viruses
+                </p><br>
+            </li>
+            <li class="feature">
+                gavatar
+                <p>
+                    gavatar is a command that gets a link to a guild picture
+                </p><br>
+            </li>
+            <li class="feature">
+                dlgavatar
+                <p>
+                    dlgavatar is a command that downloads a guild picture
+                </p><br>
+            </li>
+            <li class="feature">
+                userinfo
+                <p>
+                    userinfo is a command that collects info about a user
+                </p><br>
+            </li>
+            <li class="feature">
+                purge
+                <p>
+                    purge is a command that deletes messages up to 14 days old (limit imposed by discord)
+                </p><br>
+            </li>
+            <li class="feature">
+                serverinfo
+                <p>
+                    serverinfo is a command that collects info about a server
+                </p><br><br>
             </li>
         </ul>
         
-        <ul class="placeholder3">
-            <div class="section-name">Section 3</div><br>
+        <ul class="fun">
+            <div class="section-name">Fun Commands</div><br>
             <li class="feature">
-                feature 1
+                ascii
                 <p>
-                    description
+                    ascii is a command that creates an ascii art message from an input
                 </p><br>
             </li>
             <li class="feature">
-                feature 2
+                empty
                 <p>
-                    description
+                    empty is a command that sends a <span title="chr(173) is an ascii code that display a transparent character">chr(173)</span> into the chat
                 </p><br>
+            </li>
+            <li class="feature">
+                revert
+                <p>
+                    revert is a command that reverts the order of letters in the input message
+                </p><br>
+            </li>
+            <li class="feature">
+                hug
+                <p>
+                    hug is a command that sends a hug to a discord user
+                </p><br>
+            </li>
+            <li class="feature">
+                ball
+                <p>
+                    ball is a command that emulates the magic 8ball
+                </p><br>
+            </li>
+            <li class="feature">
+                owo
+                <p>
+                    owo is a command that toggles the owo mode
+                </p>
+                <p>
+                    anyd you wiww stawt speakinyg wike this
+                </p><br>
+            </li>
+            <li class="feature">
+                question
+                <p>
+                    question is a command that sends a totally random question
+                </p><br>
+            </li>
+            <li class="feature">
+                imitate
+                <p>
+                    imitate is a command that allows you to mimic any user
+                </p><br>
+            </li>
+            <li class="feature">
+                lovecalc
+                <p>
+                    lovecalc is a command that calculates a love chance between you and a user
+                </p><br>
+            </li>
+            <li class="feature">
+                ppsize
+                <p>
+                    ppsize is a command that calculates a random pp lenght <span title="8=======D">😏</span>
+                </p><br>
+            </li>
+            <li class="feature">
+                dice
+                <p>
+                    dice is a command that rolls a <span title="don't you say eh?">dice</span> for you
+                </p><br>
+            </li>
+            <li class="feature">
+                codeblock
+                <p>
+                    codeblock is a command that transforms your message into a discord codeblock
+                </p><br>
+            </li>
+            <li class="feature">
+                box
+                <p>
+                    box is a command that transforms your message into a discord textbox
+                </p><br>
+            </li>
+            <li class="feature">
+                langblock
+                <p>
+                    langblock is a command that transforms your message into a language specific codeblock
+                </p><br>
+            </li>
+            <li class="feature">
+                spoiler
+                <p>
+                    spoiler is a command that sets every character of a message as spoiler
+                </p><br>
+            </li>
+            <li class="feature">
+                spread
+                <p>
+                    spread is a command that sends a different message for each character of an input
+                </p><br>
+            </li>
+            <li class="feature">
+                emojify
+                <p>
+                    emojify is a command that emojifies the message you send
+                </p><br><br>
             </li>
         </ul>
         
-        <ul class="placeholder3">
-            <div class="section-name">Section 3</div><br>
+        <ul class="moderation">
+            <div class="section-name"><span title="This is the 'don't you say?' section">Moderation Commands</span></div><br>
             <li class="feature">
-                feature 1
+                ban
                 <p>
-                    description
+                    ban is a command that makes a server user ban
                 </p><br>
             </li>
             <li class="feature">
-                feature 2
+                unban
                 <p>
-                    description
-                </p><br>
-            </li>
-        </ul>
-        
-        <ul class="placeholder3">
-            <div class="section-name">Section 3</div><br>
-            <li class="feature">
-                feature 1
-                <p>
-                    description
+                    unban is a command that makes a server user unban
                 </p><br>
             </li>
             <li class="feature">
-                feature 2
+                kick
                 <p>
-                    description
-                </p><br>
+                    kick is a command that makes a server user kick
+                </p><br><br>
             </li>
         </ul>
         
-        <ul class="placeholder3">
-            <div class="section-name">Section 3</div><br>
+        <ul class="relationships">
+            <div class="section-name">Relationships Commands</div><br>
             <li class="feature">
-                feature 1
+                isblocked
                 <p>
-                    description
+                    isblocked is a command that checks if a user is blocked by you
                 </p><br>
             </li>
             <li class="feature">
-                feature 2
+                block
                 <p>
-                    description
+                    block is a command that blocks a user
                 </p><br>
             </li>
+            <li class="feature">
+                unblock
+                <p>
+                    unblock is a command that unblocks a blocked user
+                </p><br>
+            </li>
+            <li class="feature">
+                isfriend
+                <p>
+                    isfriend is a command that checks if a user is your friend
+                </p><br>
+            </li>
+            <li class="feature">
+                friend
+                <p>
+                    friend is a command that sends a friend request to a user
+                </p><br>
+            </li>
+            <li class="feature">
+                unfriend
+                <p>
+                    unfriend is a command that removes the friendship between you and a user
+                </p><br>
+            </li>
+            <li class="note"><span title="next images are obtained through an API, so we have no control on what it will return">⚠️ next features can contain NSFW</span></li><br>
+            <li class="feature">
+                goose
+                <p>
+                    goose is a command that sends a goose image
+                </p><br>
+            </li>
+            <li class="feature">
+                slap
+                <p>
+                    slap is a command that makes you slap a user
+                </p><br>
+            </li>
+            <li class="feature">
+                kiss
+                <p>
+                    kiss is a command that makes you kiss a user
+                </p><br>
+            </li>
+            <li class="feature">
+                poke
+                <p>
+                    poke is a command that makes you poke a user
+                </p><br>
+            </li>
+            <li class="feature">
+                pat
+                <p>
+                    pat is a command that makes you pat a user
+                </p><br>
+            </li>
+            <li class="feature">
+                tickle
+                <p>
+                    tickle is a command that makes you tickle a user
+                </p><br>
+            </li>
+            <li class="feature">
+                feed
+                <p>
+                    feed is a command that makes you feed a user
+                </p><br>
+            </li>
+            <li class="feature">
+                cuddle
+                <p>
+                    cuddle is a command that makes you cuddle a user
+                </p><br>
+            </li>
+            <li class="feature">
+                spank
+                <p>
+                    spank is a command that makes you spank a user
+                </p><br><br>
+            </li>
+        </ul>
+        
+        <ul class="minecraft">
+            <div class="section-name">Minecraft Commands [Work In Progress, commands are not yet working]</div><br>
+            <li class="feature">
+                mcserver
+                <p>
+                    mcserver is a command that lookups a server status
+                </p><br>
+            </li>
+            <li class="feature">
+                mcskin
+                <p>
+                    mcskin is a command that gets a user skin
+                </p><br>
+            </li>
+            <li class="feature">
+                mcuid
+                <p>
+                    mcuid is a command that gets a user minecraft id
+                </p><br><br>
+            </li>
+        </ul>
+
+        <ul class="anime">
+            <div class="section-name">Anime Commands [⚠️ NSFW]</div><br>
+            <li class="note">Undergoing a rework</li>
         </ul>
     </div>
     

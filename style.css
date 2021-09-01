@@ -171,6 +171,9 @@ header .logo:hover{
 }
 
 
+.features .note{
+    list-style: none;
+}
 .features{
     color: rgb(214, 214, 214);
     position: relative;
