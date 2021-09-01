@@ -149,7 +149,7 @@ header .logo:hover{
     display: flex;
     cursor: default;
 }
-.title p:hover{
+.subtitle p:hover{
     position: relative;
     color: green;
     text-shadow: 0 0 40px green;
@@ -165,7 +165,12 @@ header .logo:hover{
     display: flex;
     cursor: default;
 }
-.subtitle p:hover{
+.title a{
+    position: relative;
+    text-decoration: none;
+    color: darkgreen;
+}
+.title a:hover{
     position: relative;
     color: green;
 }
