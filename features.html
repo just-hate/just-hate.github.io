@@ -8,6 +8,7 @@
     <title>Vanadium Industries | Features</title>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script charset="utf-8" src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -40,31 +41,32 @@
         -->
         <ul class="section-nav">
             <li>
-                <a data-scroll="scrollTo" href="#griefing">Griefing</a>
+                <a data-scroll="scroll_to" href="#griefing">Griefing</a>
+                <span onclick="scroll_to('griefing')"></span>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#settings">Settings</a>
+                <a data-scroll="scroll_to" href="#settings">Settings</a>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#placeholder3">Info</a>
+                <span onclick="scroll_to('info')">Info</span>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#placeholder3">Tools</a>
+                <a data-scroll="scroll_to" href="#tools">Tools</a>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#placeholder3">Fun</a>
+                <a data-scroll="scroll_to" href="#fun">Fun</a>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#placeholder3">Moderation</a>
+                <a data-scroll="scroll_to" href="#moderation">Moderation</a>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#placeholder3">Realationships</a>
+                <a data-scroll="scroll_to" href="#relationships">Realationships</a>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#placeholder3">Minecraft</a>
+                <a data-scroll="scroll_to" href="#minecraft">Minecraft</a>
             </li>
             <li>
-                <a data-scroll="scrollTo" href="#placeholder3">Anime (NSFW)</a>
+                <a data-scroll="scroll_to" href="#anime">Anime</a>
             </li>
         </ul>
     </div>
@@ -201,18 +203,24 @@
             </li>
         </ul>
         
-        <ul class="placeholder3">
-            <div class="section-name">Section 3</div><br>
+        <ul class="info">
+            <div class="section-name">Info</div><br>
             <li class="feature">
-                feature 1
+                stats
                 <p>
-                    description
+                    stats is a command that shows infos about the machine the bot is running on
                 </p><br>
             </li>
             <li class="feature">
-                feature 2
+                ping
                 <p>
-                    description
+                    ping is a command that shows bot and discord latency
+                </p><br>
+            </li>
+            <li class="feature">
+                uptime
+                <p>
+                    uptime is a command that shows the time bot has been running
                 </p><br>
             </li>
         </ul>
