@@ -264,8 +264,7 @@ header .logo:hover{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #505050;
-    opacity: 90%;
+    background-color: darkgreen;
     min-width: 160px;
     z-index: 1;
 }
@@ -275,7 +274,7 @@ header .logo:hover{
     text-decoration: none;
     display: block;
 }
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {background-color: green}
 .show {display:block;}
 
 
