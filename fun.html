@@ -11,7 +11,7 @@
     <script charset="utf-8" src="js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header" id="Header">
         <a href="index.html" class="logo">Vanadium Industries</a>
         <div class="group1">
             <ul class="nav">
@@ -25,145 +25,161 @@
             </ul>
         </div>
     </header><br>
-    <div class="title">
-        <p>Features</p>
-    </div>
-    <div class="subtitle">
-        <br>
-        <p>Vanadium Selfbot</p>
-        <br>
-    </div>
-    <div class="section-nav">
-        <!-- navigate through different command sections 
-             usage:
-                <a href="#google"></a>
-                <div id="google"></div>
-        -->
-        <div class="dropdown">
-            <button onclick="dropdown()" class="dropbtn">Fun <ion-icon name="caret-down-circle-outline"></ion-icon></button>
-            <div id="droplist" class="dropdown-content">
-                <a href="features.html">All</a>
-                <a href="griefing.html">Griefing</a>
-                <a href="settings.html">Settings</a>
-                <a href="info.html">Info</a>
-                <a href="tools.html">Tools</a>
-                <a href="fun.html">Fun</a>
-                <a href="moderation.html">Moderation</a>
-                <a href="relationships.html">Relationships</a>
-                <a href="minecraft.html">Minecraft</a>
-                <a href="anime.html">Anime</a>
+    <content>
+        <div class="title">
+            <p>Features</p>
+        </div>
+        <div class="subtitle">
+            <br>
+            <p>Vanadium Selfbot</p>
+            <br>
+        </div>
+        <div class="section-nav">
+            <!-- navigate through different command sections 
+                usage:
+                    <a href="#google"></a>
+                    <div id="google"></div>
+            -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn">Fun <ion-icon name="caret-down-circle-outline"></ion-icon></button>
+                <div id="droplist" class="dropdown-content">
+                    <a href="features.html">All</a>
+                    <a href="griefing.html">Griefing</a>
+                    <a href="settings.html">Settings</a>
+                    <a href="info.html">Info</a>
+                    <a href="tools.html">Tools</a>
+                    <a href="fun.html">Fun</a>
+                    <a href="moderation.html">Moderation</a>
+                    <a href="relationships.html">Relationships</a>
+                    <a href="minecraft.html">Minecraft</a>
+                    <a href="anime.html">Anime</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="features"><br>
-        <ul class="fun">
-            <div class="section-name">Fun Commands</div><br>
-            <li class="feature">
-                ascii
-                <p>
-                    ascii is a command that creates an ascii art message from an input
-                </p><br>
-            </li>
-            <li class="feature">
-                empty
-                <p>
-                    empty is a command that sends a <span title="chr(173) is an ascii code that display a transparent character">chr(173)</span> into the chat
-                </p><br>
-            </li>
-            <li class="feature">
-                revert
-                <p>
-                    revert is a command that reverts the order of letters in the input message
-                </p><br>
-            </li>
-            <li class="feature">
-                hug
-                <p>
-                    hug is a command that sends a hug to a discord user
-                </p><br>
-            </li>
-            <li class="feature">
-                ball
-                <p>
-                    ball is a command that emulates the magic 8ball
-                </p><br>
-            </li>
-            <li class="feature">
-                owo
-                <p>
-                    owo is a command that toggles the owo mode
-                </p>
-                <p>
-                    anyd you wiww stawt speakinyg wike this
-                </p><br>
-            </li>
-            <li class="feature">
-                question
-                <p>
-                    question is a command that sends a totally random question
-                </p><br>
-            </li>
-            <li class="feature">
-                imitate
-                <p>
-                    imitate is a command that allows you to mimic any user
-                </p><br>
-            </li>
-            <li class="feature">
-                lovecalc
-                <p>
-                    lovecalc is a command that calculates a love chance between you and a user
-                </p><br>
-            </li>
-            <li class="feature">
-                ppsize
-                <p>
-                    ppsize is a command that calculates a random pp lenght <span title="8=======D">😏</span>
-                </p><br>
-            </li>
-            <li class="feature">
-                dice
-                <p>
-                    dice is a command that rolls a <span title="don't you say eh?">dice</span> for you
-                </p><br>
-            </li>
-            <li class="feature">
-                codeblock
-                <p>
-                    codeblock is a command that transforms your message into a discord codeblock
-                </p><br>
-            </li>
-            <li class="feature">
-                box
-                <p>
-                    box is a command that transforms your message into a discord textbox
-                </p><br>
-            </li>
-            <li class="feature">
-                langblock
-                <p>
-                    langblock is a command that transforms your message into a language specific codeblock
-                </p><br>
-            </li>
-            <li class="feature">
-                spoiler
-                <p>
-                    spoiler is a command that sets every character of a message as spoiler
-                </p><br>
-            </li>
-            <li class="feature">
-                spread
-                <p>
-                    spread is a command that sends a different message for each character of an input
-                </p><br>
-            </li>
-            <li class="feature">
-                emojify
-                <p>
-                    emojify is a command that emojifies the message you send
-                </p><br><br>
-            </li>
-        </ul>
-    </div>
+        <div class="features"><br>
+            <ul class="fun">
+                <div class="section-name">Fun Commands</div><br>
+                <li class="feature">
+                    ascii
+                    <p>
+                        ascii is a command that creates an ascii art message from an input
+                    </p><br>
+                </li>
+                <li class="feature">
+                    empty
+                    <p>
+                        empty is a command that sends a <span title="chr(173) is an ascii code that display a transparent character">chr(173)</span> into the chat
+                    </p><br>
+                </li>
+                <li class="feature">
+                    revert
+                    <p>
+                        revert is a command that reverts the order of letters in the input message
+                    </p><br>
+                </li>
+                <li class="feature">
+                    hug
+                    <p>
+                        hug is a command that sends a hug to a discord user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    ball
+                    <p>
+                        ball is a command that emulates the magic 8ball
+                    </p><br>
+                </li>
+                <li class="feature">
+                    owo
+                    <p>
+                        owo is a command that toggles the owo mode
+                    </p>
+                    <p>
+                        anyd you wiww stawt speakinyg wike this
+                    </p><br>
+                </li>
+                <li class="feature">
+                    question
+                    <p>
+                        question is a command that sends a totally random question
+                    </p><br>
+                </li>
+                <li class="feature">
+                    imitate
+                    <p>
+                        imitate is a command that allows you to mimic any user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    lovecalc
+                    <p>
+                        lovecalc is a command that calculates a love chance between you and a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    ppsize
+                    <p>
+                        ppsize is a command that calculates a random pp lenght <span title="8=======D">😏</span>
+                    </p><br>
+                </li>
+                <li class="feature">
+                    dice
+                    <p>
+                        dice is a command that rolls a <span title="don't you say eh?">dice</span> for you
+                    </p><br>
+                </li>
+                <li class="feature">
+                    codeblock
+                    <p>
+                        codeblock is a command that transforms your message into a discord codeblock
+                    </p><br>
+                </li>
+                <li class="feature">
+                    box
+                    <p>
+                        box is a command that transforms your message into a discord textbox
+                    </p><br>
+                </li>
+                <li class="feature">
+                    langblock
+                    <p>
+                        langblock is a command that transforms your message into a language specific codeblock
+                    </p><br>
+                </li>
+                <li class="feature">
+                    spoiler
+                    <p>
+                        spoiler is a command that sets every character of a message as spoiler
+                    </p><br>
+                </li>
+                <li class="feature">
+                    spread
+                    <p>
+                        spread is a command that sends a different message for each character of an input
+                    </p><br>
+                </li>
+                <li class="feature">
+                    emojify
+                    <p>
+                        emojify is a command that emojifies the message you send
+                    </p><br><br>
+                </li>
+            </ul>
+        </div>
+    </content>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("Header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
 </body>
 </html>

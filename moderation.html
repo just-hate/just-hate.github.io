@@ -11,7 +11,7 @@
     <script charset="utf-8" src="js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header" id="Header">
         <a href="index.html" class="logo">Vanadium Industries</a>
         <div class="group1">
             <ul class="nav">
@@ -25,58 +25,75 @@
             </ul>
         </div>
     </header><br>
-    <div class="title">
-        <p>Features</p>
-    </div>
-    <div class="subtitle">
-        <br>
-        <p>Vanadium Selfbot</p>
-        <br>
-    </div>
-    <div class="section-nav">
-        <!-- navigate through different command sections 
-             usage:
-                <a href="#google"></a>
-                <div id="google"></div>
-        -->
-        <div class="dropdown">
-            <button onclick="dropdown()" class="dropbtn">Moderation <ion-icon name="caret-down-circle-outline"></ion-icon></button>
-            <div id="droplist" class="dropdown-content">
-                <a href="features.html">All</a>
-                <a href="griefing.html">Griefing</a>
-                <a href="settings.html">Settings</a>
-                <a href="info.html">Info</a>
-                <a href="tools.html">Tools</a>
-                <a href="fun.html">Fun</a>
-                <a href="moderation.html">Moderation</a>
-                <a href="relationships.html">Relationships</a>
-                <a href="minecraft.html">Minecraft</a>
-                <a href="anime.html">Anime</a>
+
+        <content>
+        <div class="title">
+            <p>Features</p>
+        </div>
+        <div class="subtitle">
+            <br>
+            <p>Vanadium Selfbot</p>
+            <br>
+        </div>
+        <div class="section-nav">
+            <!-- navigate through different command sections 
+                usage:
+                    <a href="#google"></a>
+                    <div id="google"></div>
+            -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn">Moderation <ion-icon name="caret-down-circle-outline"></ion-icon></button>
+                <div id="droplist" class="dropdown-content">
+                    <a href="features.html">All</a>
+                    <a href="griefing.html">Griefing</a>
+                    <a href="settings.html">Settings</a>
+                    <a href="info.html">Info</a>
+                    <a href="tools.html">Tools</a>
+                    <a href="fun.html">Fun</a>
+                    <a href="moderation.html">Moderation</a>
+                    <a href="relationships.html">Relationships</a>
+                    <a href="minecraft.html">Minecraft</a>
+                    <a href="anime.html">Anime</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="features"><br>
-        <ul class="moderation">
-            <div class="section-name"><span title="This is the 'don't you say?' section">Moderation Commands</span></div><br>
-            <li class="feature">
-                ban
-                <p>
-                    ban is a command that makes a server user ban
-                </p><br>
-            </li>
-            <li class="feature">
-                unban
-                <p>
-                    unban is a command that makes a server user unban
-                </p><br>
-            </li>
-            <li class="feature">
-                kick
-                <p>
-                    kick is a command that makes a server user kick
-                </p><br><br>
-            </li>
-        </ul>
-    </div>
+        <div class="features"><br>
+            <ul class="moderation">
+                <div class="section-name"><span title="This is the 'don't you say?' section">Moderation Commands</span></div><br>
+                <li class="feature">
+                    ban
+                    <p>
+                        ban is a command that makes a server user ban
+                    </p><br>
+                </li>
+                <li class="feature">
+                    unban
+                    <p>
+                        unban is a command that makes a server user unban
+                    </p><br>
+                </li>
+                <li class="feature">
+                    kick
+                    <p>
+                        kick is a command that makes a server user kick
+                    </p><br><br>
+                </li>
+            </ul>
+        </div>
+    </content>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("Header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
 </body>
 </html>

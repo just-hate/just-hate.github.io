@@ -11,7 +11,7 @@
     <script charset="utf-8" src="js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header" id="Header">
         <a href="index.html" class="logo">Vanadium Industries</a>
         <div class="group1">
             <ul class="nav">
@@ -24,140 +24,156 @@
                 <li><a href="https://drive.google.com/drive/folders/1_O49dQH6KPH--RvwiWrHeSfjx0-XZSzF?usp=sharing" target="_blank" ><ion-icon name="download-outline"></ion-icon></a></li>
             </ul>
         </div>
-    </header><br>
-    <div class="title">
-        <p>Features</p>
-    </div>
-    <div class="subtitle">
-        <br>
-        <p>Vanadium Selfbot</p>
-        <br>
-    </div>
-    <div class="section-nav">
-        <!-- navigate through different command sections 
-             usage:
-                <a href="#google"></a>
-                <div id="google"></div>
-        -->
-        <div class="dropdown">
-            <button onclick="dropdown()" class="dropbtn">Griefing <ion-icon name="caret-down-circle-outline"></ion-icon></button>
-            <div id="droplist" class="dropdown-content">
-                <a href="features.html">All</a>
-                <a href="griefing.html">Griefing</a>
-                <a href="settings.html">Settings</a>
-                <a href="info.html">Info</a>
-                <a href="tools.html">Tools</a>
-                <a href="fun.html">Fun</a>
-                <a href="moderation.html">Moderation</a>
-                <a href="relationships.html">Relationships</a>
-                <a href="minecraft.html">Minecraft</a>
-                <a href="anime.html">Anime</a>
+    </header>
+    <content>
+        <div class="title">
+            <p>Features</p>
+        </div>
+        <div class="subtitle">
+            <br>
+            <p>Vanadium Selfbot</p>
+            <br>
+        </div>
+        <div class="section-nav">
+            <!-- navigate through different command sections 
+                usage:
+                    <a href="#google"></a>
+                    <div id="google"></div>
+            -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn">Griefing <ion-icon name="caret-down-circle-outline"></ion-icon></button>
+                <div id="droplist" class="dropdown-content">
+                    <a href="features.html">All</a>
+                    <a href="griefing.html">Griefing</a>
+                    <a href="settings.html">Settings</a>
+                    <a href="info.html">Info</a>
+                    <a href="tools.html">Tools</a>
+                    <a href="fun.html">Fun</a>
+                    <a href="moderation.html">Moderation</a>
+                    <a href="relationships.html">Relationships</a>
+                    <a href="minecraft.html">Minecraft</a>
+                    <a href="anime.html">Anime</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="features"><br>
-        <ul class="griefing">
-            <div class="section-name">Griefing Commands [avoid use on main accounts]</div><br>
-            <li class="feature">
-                groupspam
-                <p>
-                    groupspam is a command that spams a text in every joined group chat
-                </p>
-                <p>
-                    Usage: [prefix]groupspam [amount of messages] [message text]
-                </p><br>
-            </li>
-            <li class="feature">
-                dmspam
-                <p>
-                    dmspam is a command that spams a text in every open dm channel
-                </p>
-                <p>
-                    Usage: [prefix]dmspam [amount of messages] [message text]
-                </p><br>
-            </li>
-            <li class="feature">
-                friendremover
-                <p>
-                    dmspam is a command that removes every friend a user has
-                </p>
-                <p>
-                    Usage: [prefix]friendremover
-                </p><br>
-            </li>
-            <li class="feature">
-                serverleaver
-                <p>
-                    serverleaver is a command that quits every possible server
-                </p>
-                <p>
-                    Usage: [prefix]serverleaver
-                </p><br>
-            </li>
-            <li class="feature">
-                channelspam
-                <p>
-                    channelspam is a command that spam creates channel in a server
-                </p>
-                <p>
-                    Usage: [prefix]channelspam [amount of channels] [channels name]
-                </p><br>
-            </li>
-            <li class="feature">
-                masschanneldelete
-                <p>
-                    masschanneldelete is a command that deletes every possible channel in a server
-                </p><br>
-            </li>
-            <li class="feature">
-                annoyer
-                <p>
-                    annoyer is a command that spams a @everyone in every possible channel
-                </p><br>
-            </li>
-            <li class="feature">
-                rolespam
-                <p>
-                    rolespam is a command that spam creates roles in a server
-                </p><br>
-            </li>
-            <li class="feature">
-                rolenuker
-                <p>
-                    rolenuker is a command that deletes every possible role in a server
-                </p><br>
-            </li>
-            <li class="feature">
-                rolerenamer
-                <p>
-                    rolerenamer is a command that renames every possible role in a server
-                </p><br>
-            </li>
-            <li class="feature">
-                masskick
-                <p>
-                    masskick is a command that kicks every possible server member
-                </p><br>
-            </li>
-            <li class="feature">
-                massban
-                <p>
-                    massban is a command that bans every possible server member
-                </p><br>
-            </li>
-            <li class="feature">
-                clown
-                <p>
-                    clown is a command that changes server name and icon to a clown
-                </p><br>
-            </li>
-            <li class="feature">
-                aiodstr
-                <p>
-                    aiodstr is a command that makes combos of other griefing commands
-                </p><br><br>
-            </li>
-        </ul>
-    </div>
+        <div class="features"><br>
+            <ul class="griefing">
+                <div class="section-name">Griefing Commands [avoid use on main accounts]</div><br>
+                <li class="feature">
+                    groupspam
+                    <p>
+                        groupspam is a command that spams a text in every joined group chat
+                    </p>
+                    <p>
+                        Usage: [prefix]groupspam [amount of messages] [message text]
+                    </p><br>
+                </li>
+                <li class="feature">
+                    dmspam
+                    <p>
+                        dmspam is a command that spams a text in every open dm channel
+                    </p>
+                    <p>
+                        Usage: [prefix]dmspam [amount of messages] [message text]
+                    </p><br>
+                </li>
+                <li class="feature">
+                    friendremover
+                    <p>
+                        dmspam is a command that removes every friend a user has
+                    </p>
+                    <p>
+                        Usage: [prefix]friendremover
+                    </p><br>
+                </li>
+                <li class="feature">
+                    serverleaver
+                    <p>
+                        serverleaver is a command that quits every possible server
+                    </p>
+                    <p>
+                        Usage: [prefix]serverleaver
+                    </p><br>
+                </li>
+                <li class="feature">
+                    channelspam
+                    <p>
+                        channelspam is a command that spam creates channel in a server
+                    </p>
+                    <p>
+                        Usage: [prefix]channelspam [amount of channels] [channels name]
+                    </p><br>
+                </li>
+                <li class="feature">
+                    masschanneldelete
+                    <p>
+                        masschanneldelete is a command that deletes every possible channel in a server
+                    </p><br>
+                </li>
+                <li class="feature">
+                    annoyer
+                    <p>
+                        annoyer is a command that spams a @everyone in every possible channel
+                    </p><br>
+                </li>
+                <li class="feature">
+                    rolespam
+                    <p>
+                        rolespam is a command that spam creates roles in a server
+                    </p><br>
+                </li>
+                <li class="feature">
+                    rolenuker
+                    <p>
+                        rolenuker is a command that deletes every possible role in a server
+                    </p><br>
+                </li>
+                <li class="feature">
+                    rolerenamer
+                    <p>
+                        rolerenamer is a command that renames every possible role in a server
+                    </p><br>
+                </li>
+                <li class="feature">
+                    masskick
+                    <p>
+                        masskick is a command that kicks every possible server member
+                    </p><br>
+                </li>
+                <li class="feature">
+                    massban
+                    <p>
+                        massban is a command that bans every possible server member
+                    </p><br>
+                </li>
+                <li class="feature">
+                    clown
+                    <p>
+                        clown is a command that changes server name and icon to a clown
+                    </p><br>
+                </li>
+                <li class="feature">
+                    aiodstr
+                    <p>
+                        aiodstr is a command that makes combos of other griefing commands
+                    </p><br><br>
+                </li>
+            </ul>
+        </div>
+    </content>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("Header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
 </body>
 </html>

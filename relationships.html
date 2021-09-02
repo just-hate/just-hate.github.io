@@ -11,7 +11,7 @@
     <script charset="utf-8" src="js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header" id="Header">
         <a href="index.html" class="logo">Vanadium Industries</a>
         <div class="group1">
             <ul class="nav">
@@ -25,131 +25,148 @@
             </ul>
         </div>
     </header><br>
-    <div class="title">
-        <p>Features</p>
-    </div>
-    <div class="subtitle">
-        <br>
-        <p>Vanadium Selfbot</p>
-        <br>
-    </div>
-    <div class="section-nav">
-        <!-- navigate through different command sections 
-             usage:
-                <a href="#google"></a>
-                <div id="google"></div>
-        -->
-        <div class="dropdown">
-            <button onclick="dropdown()" class="dropbtn">Relationships <ion-icon name="caret-down-circle-outline"></ion-icon></button>
-            <div id="droplist" class="dropdown-content">
-                <a href="features.html">All</a>
-                <a href="griefing.html">Griefing</a>
-                <a href="settings.html">Settings</a>
-                <a href="info.html">Info</a>
-                <a href="tools.html">Tools</a>
-                <a href="fun.html">Fun</a>
-                <a href="moderation.html">Moderation</a>
-                <a href="relationships.html">Relationships</a>
-                <a href="minecraft.html">Minecraft</a>
-                <a href="anime.html">Anime</a>
+
+        <content>
+        <div class="title">
+            <p>Features</p>
+        </div>
+        <div class="subtitle">
+            <br>
+            <p>Vanadium Selfbot</p>
+            <br>
+        </div>
+        <div class="section-nav">
+            <!-- navigate through different command sections 
+                usage:
+                    <a href="#google"></a>
+                    <div id="google"></div>
+            -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropbtn">Relationships <ion-icon name="caret-down-circle-outline"></ion-icon></button>
+                <div id="droplist" class="dropdown-content">
+                    <a href="features.html">All</a>
+                    <a href="griefing.html">Griefing</a>
+                    <a href="settings.html">Settings</a>
+                    <a href="info.html">Info</a>
+                    <a href="tools.html">Tools</a>
+                    <a href="fun.html">Fun</a>
+                    <a href="moderation.html">Moderation</a>
+                    <a href="relationships.html">Relationships</a>
+                    <a href="minecraft.html">Minecraft</a>
+                    <a href="anime.html">Anime</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="features"><br>
-        <ul class="relationships">
-            <div class="section-name">Relationships Commands</div><br>
-            <li class="feature">
-                isblocked
-                <p>
-                    isblocked is a command that checks if a user is blocked by you
-                </p><br>
-            </li>
-            <li class="feature">
-                block
-                <p>
-                    block is a command that blocks a user
-                </p><br>
-            </li>
-            <li class="feature">
-                unblock
-                <p>
-                    unblock is a command that unblocks a blocked user
-                </p><br>
-            </li>
-            <li class="feature">
-                isfriend
-                <p>
-                    isfriend is a command that checks if a user is your friend
-                </p><br>
-            </li>
-            <li class="feature">
-                friend
-                <p>
-                    friend is a command that sends a friend request to a user
-                </p><br>
-            </li>
-            <li class="feature">
-                unfriend
-                <p>
-                    unfriend is a command that removes the friendship between you and a user
-                </p><br>
-            </li>
-            <li class="note"><span title="next images are obtained through an API, so we have no control on what it will return">⚠️ next features can contain NSFW</span></li><br>
-            <li class="feature">
-                goose
-                <p>
-                    goose is a command that sends a goose image
-                </p><br>
-            </li>
-            <li class="feature">
-                slap
-                <p>
-                    slap is a command that makes you slap a user
-                </p><br>
-            </li>
-            <li class="feature">
-                kiss
-                <p>
-                    kiss is a command that makes you kiss a user
-                </p><br>
-            </li>
-            <li class="feature">
-                poke
-                <p>
-                    poke is a command that makes you poke a user
-                </p><br>
-            </li>
-            <li class="feature">
-                pat
-                <p>
-                    pat is a command that makes you pat a user
-                </p><br>
-            </li>
-            <li class="feature">
-                tickle
-                <p>
-                    tickle is a command that makes you tickle a user
-                </p><br>
-            </li>
-            <li class="feature">
-                feed
-                <p>
-                    feed is a command that makes you feed a user
-                </p><br>
-            </li>
-            <li class="feature">
-                cuddle
-                <p>
-                    cuddle is a command that makes you cuddle a user
-                </p><br>
-            </li>
-            <li class="feature">
-                spank
-                <p>
-                    spank is a command that makes you spank a user
-                </p><br><br>
-            </li>
-        </ul>
-    </div>
+        <div class="features"><br>
+            <ul class="relationships">
+                <div class="section-name">Relationships Commands</div><br>
+                <li class="feature">
+                    isblocked
+                    <p>
+                        isblocked is a command that checks if a user is blocked by you
+                    </p><br>
+                </li>
+                <li class="feature">
+                    block
+                    <p>
+                        block is a command that blocks a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    unblock
+                    <p>
+                        unblock is a command that unblocks a blocked user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    isfriend
+                    <p>
+                        isfriend is a command that checks if a user is your friend
+                    </p><br>
+                </li>
+                <li class="feature">
+                    friend
+                    <p>
+                        friend is a command that sends a friend request to a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    unfriend
+                    <p>
+                        unfriend is a command that removes the friendship between you and a user
+                    </p><br>
+                </li>
+                <li class="note"><span title="next images are obtained through an API, so we have no control on what it will return">⚠️ next features can contain NSFW</span></li><br>
+                <li class="feature">
+                    goose
+                    <p>
+                        goose is a command that sends a goose image
+                    </p><br>
+                </li>
+                <li class="feature">
+                    slap
+                    <p>
+                        slap is a command that makes you slap a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    kiss
+                    <p>
+                        kiss is a command that makes you kiss a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    poke
+                    <p>
+                        poke is a command that makes you poke a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    pat
+                    <p>
+                        pat is a command that makes you pat a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    tickle
+                    <p>
+                        tickle is a command that makes you tickle a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    feed
+                    <p>
+                        feed is a command that makes you feed a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    cuddle
+                    <p>
+                        cuddle is a command that makes you cuddle a user
+                    </p><br>
+                </li>
+                <li class="feature">
+                    spank
+                    <p>
+                        spank is a command that makes you spank a user
+                    </p><br><br>
+                </li>
+            </ul>
+        </div>
+    </content>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("Header");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+    </script>
 </body>
 </html>
