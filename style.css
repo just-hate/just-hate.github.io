@@ -165,12 +165,12 @@ header .logo:hover{
     display: flex;
     cursor: default;
 }
-.title a{
+.title p{
     position: relative;
     text-decoration: none;
     color: darkgreen;
 }
-.title a:hover{
+.title p:hover{
     position: relative;
     color: green;
 }
