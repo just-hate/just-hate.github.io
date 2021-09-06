@@ -1,17 +1,8 @@
-window.onscroll = function() {stickized()};
 
-var header = document.getElementById("Header");
-
-var sticky = header.offsetTop;
-
-function stickized() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
+window.addEventListener("scroll", function(){
+  var header = this.document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 0)
+})
 
 function dropdown() {
   document.getElementById("droplist").classList.toggle("show");
