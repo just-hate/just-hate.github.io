@@ -1,1 +1,4 @@
+ExpiresActive On
+ExpiresDefault A300
+ExpiresByType text/css A3600
 ErrorDocument 404/404.html
