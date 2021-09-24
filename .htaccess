@@ -2,3 +2,8 @@ ExpiresActive On
 ExpiresDefault A300
 ExpiresByType text/css A3600
 ErrorDocument 404/404.html
+RewriteEngine on
+RewriteCond %{THE_REQUEST} /([^.]+).html [NC]
+RewriteRule .+ /%1 [L,R=301]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule (.*)/?$ /$1.html [L]
